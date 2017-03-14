@@ -56,3 +56,4 @@ gulp.task('browser-sync', ['css', 'js', 'img', 'html'],function() {
 });
 
 gulp.task('default', ['html', 'css', 'js', 'img', 'browser-sync']);
+//ok
