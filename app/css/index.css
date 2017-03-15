@@ -41,4 +41,5 @@ html, body{
 
 #numb{
     width: 4%;
+    min-width: 30px;
 }

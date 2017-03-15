@@ -37,10 +37,11 @@ gulp.task('js',  () => {
     .pipe(browserSync.stream());
 });
  
-gulp.task('img',  () => {
+gulp.task('img',  () => {/*
   return gulp.src('./app/img/*')
     .pipe(image())
     .pipe(gulp.dest('./dist/img'));
+    */
 });
 
 gulp.task('browser-sync', ['css', 'js', 'img', 'html'],function() {
