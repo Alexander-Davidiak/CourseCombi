@@ -31,7 +31,7 @@ gulp.task('js',  () => {
     .pipe(babel({
             presets: ['es2015']
     }))
-    .pipe(jsmin())
+    //.pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());

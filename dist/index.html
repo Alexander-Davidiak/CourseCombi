@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="CourseCombiApp">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <link rel="icon" href="img/logo.png">
@@ -8,7 +8,7 @@
       <script src="js/all.min.js"></script>
       <title>CourseCombi main page</title>
    </head>
-   <body> 
+   <body ng-controller="mainPageController"> 
        <div id="header">
             <img src="img/logo.png" alt="logo"><br>
             <a href="#">add your university</a>
@@ -21,10 +21,8 @@
                     Choose your University
                     <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#" onclick="setUniversity('The University of Auckland')">The University of Auckland</a></li>
-                    <li><a href="#" onclick="setUniversity('University of Richmond')">University of Richmond</a></li>
-                    <li><a href="#" onclick="setUniversity('The University of Edinburgh')">The University of Edinburgh</a></li>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
+                    <li ng-repeat="university in universities"><a href="#" ng-click="setUniversity(university.name)">{{university.name}}</a></li>
                 </ul>
                 <div id="university"></div>
             </div><hr>
