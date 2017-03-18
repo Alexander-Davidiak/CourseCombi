@@ -4,11 +4,17 @@ CourseCombiApp.controller('mainPageController', function PhoneListController($sc
   $scope.dropdown = false;
   $scope.universities = [
     {
-      name: 'Nexus S'
+      name: 'The University of Sunderland'
     }, {
-      name: 'Motorola XOOM™ with Wi-Fi'
+      name: 'The University of Auckland'
     }, {
-      name: 'MOTOROLA XOOM™'
+      name: 'University of Richmond'
+    }, {
+      name: 'University of Miami'
+    }, {
+      name: 'University of York'
+    }, {
+      name: 'The University of Manchester'
     }
   ];
   $scope.university = "";
@@ -20,6 +26,10 @@ CourseCombiApp.controller('mainPageController', function PhoneListController($sc
   $scope.courses = [];
   $scope.addCourse = () => {
     let course = document.getElementById('course').value;
+    document.getElementById('course').value = "";
     $scope.courses.push(course);
   };
+  $scope.removeCourse = (index) => {
+    $scope.courses.splice(index, 1);
+  }
 });

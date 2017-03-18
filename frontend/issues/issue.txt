@@ -1,1 +1,5 @@
-Goals will be here
+1)Make time fields in angular;
+2)Append angular http module;
+3)Show some variants of shedule;
+4)Write parsers;
+5)Make adaptive, beautiful design;
