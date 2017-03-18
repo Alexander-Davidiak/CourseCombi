@@ -22,7 +22,8 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
-                    <li ng-repeat="university in universities"><a href="#" ng-click="setUniversity(university.name)">{{university.name}}</a></li>
+                    <li id="search"><input type="search" ng-model="q" placeholder="search..."> </li>
+                    <li ng-repeat="university in universities | filter:q"><a href="#" ng-click="setUniversity(university.name)">{{university.name }}</a></li>
                 </ul>
                 <div id="university"></div>
             </div><hr>
@@ -72,7 +73,8 @@
                 <button ng-click="addCourse()">+</button>
                 <ul>
                     <li ng-repeat="course in courses">
-                        {{course}}
+                        {{course}} 
+                        <a href="" ng-click="removeCourse($index)"><img src="img/cross.png"></a>
                     </li>
                 </ul>
             </div>
