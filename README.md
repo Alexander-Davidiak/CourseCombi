@@ -1,11 +1,13 @@
-#CourseCombi
-
+CourseCombi
+===========
 **An application that will help you make schedule.**
 
 **URL:**
 
-##installation
+installation
+------------
 `npm install`
 
-###run server:
+run server:
+-----------
 `npm start`
