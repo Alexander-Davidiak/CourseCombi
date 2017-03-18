@@ -1,2 +1,0 @@
-# CourseCombi
-frontend part

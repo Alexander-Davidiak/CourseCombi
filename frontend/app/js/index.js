@@ -4,7 +4,6 @@ function setUniversity (u){
 }
 
 function addTimeValue (e) {
-    console.log(e.target); 
     let index = document.getElementById(e.target.id).innerHTML.indexOf('<input type="button"');
     document.getElementById(e.target.id).innerHTML = document.getElementById(e.target.id).innerHTML.substring(0, index); 
     document.getElementById(e.target.id).innerHTML+= "<input type='number' name=''" +

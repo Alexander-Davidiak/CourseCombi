@@ -30,7 +30,9 @@
                 when you are busy?<br>
                 <span id="Monday">Monday 
                     <br>
-                    <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
+                    <span>
+                        <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
+                    </span>
                     <br>
                     <input type="button" id="Monday" onclick="addTimeValue(event)" value="+">
                     <br>
@@ -66,7 +68,13 @@
             </div><hr>
             <div id="courses">
                 write your courses:<br>
-                <textarea cols="30" rows="5"></textarea>
+                <textarea cols="15" rows="1" id="course"></textarea>
+                <button ng-click="addCourse()">+</button>
+                <ul>
+                    <li ng-repeat="course in courses">
+                        {{course}}
+                    </li>
+                </ul>
             </div>
             <input type="button" value="send">
        </div>

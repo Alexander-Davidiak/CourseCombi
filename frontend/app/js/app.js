@@ -11,7 +11,15 @@ CourseCombiApp.controller('mainPageController', function PhoneListController($sc
       name: 'MOTOROLA XOOM™'
     }
   ];
-  $scope.setUniversity = function  (u){
+  $scope.university = "";
+  $scope.setUniversity = (u) => {
     document.getElementById("university").innerHTML = "<h1>" + u + "</h1>";
+    $scope.university = u;
   }
+  
+  $scope.courses = [];
+  $scope.addCourse = () => {
+    let course = document.getElementById('course').value;
+    $scope.courses.push(course);
+  };
 });

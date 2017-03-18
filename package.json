@@ -1,10 +1,11 @@
 {
   "name": "course-combi-backend",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "CourseCombi backend part",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd frontend && gulp html js css img && cd .. && node server.js"
   },
   "repository": {
     "type": "git",

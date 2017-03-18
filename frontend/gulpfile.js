@@ -13,7 +13,7 @@ let gulp = require('gulp');
 
 gulp.task('html', ()=>{
     return gulp.src('./app/*.html')
-        //.pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('./dist'));
 });
 
@@ -31,17 +31,16 @@ gulp.task('js',  () => {
     .pipe(babel({
             presets: ['es2015']
     }))
-    //.pipe(jsmin())
+    .pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
 });
  
-gulp.task('img',  () => {/*
+gulp.task('img',  () => {
   return gulp.src('./app/img/*')
     .pipe(image())
     .pipe(gulp.dest('./dist/img'));
-    */
 });
 
 gulp.task('browser-sync', ['css', 'js', 'img', 'html'],function() {
