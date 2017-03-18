@@ -1,0 +1,32 @@
+{
+  "name": "course-combi",
+  "version": "0.9.0",
+  "description": "CourseCombi frontend part",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "E-Kirill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/E-Kirill/CourseCombi/issues"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-image": "^2.7.5",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "live-reload": "^1.1.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1"
+  }
+}
