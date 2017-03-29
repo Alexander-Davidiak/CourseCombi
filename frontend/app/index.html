@@ -2,7 +2,7 @@
 <html ng-app="CourseCombiApp">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link rel="icon" href="img/logo.png">
+      <link rel="icon" href="img/Logo_1.png">
       <link rel="stylesheet" href="css/bootsrap.css">
       <link rel="stylesheet" href="css/index.css">
       <script src="js/all.min.js"></script>
@@ -10,10 +10,10 @@
    </head>
    <body ng-controller="mainPageController"> 
        <div id="header">
-            <img src="img/logo.png" alt="logo"><br>
-            <a href="#">add your university</a>
-            <a href="#">blog</a>
-            <a href="#">contacts</a>
+            <img src="img/Logo_1.png" alt="logo"><br>
+            <a href="#">Add your university</a>
+            <a href="#">Blog</a>
+            <a href="#">Contacts</a>
        </div>
        <div id="content">
             <div class="dropdown">
@@ -28,49 +28,49 @@
                 <div id="university"></div>
             </div><hr>
             <div id="filtres">
-                when you are busy?<br>
+                When you are busy?<br><br>
                 <span id="Monday">Monday 
                     <br>
                     <span>
                         <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
                     </span>
                     <br>
-                    <input type="button" id="Monday" onclick="addTimeValue(event)" value="+">
+                    <input type="button" id="but" onclick="addTimeValue(event)" value="add">
                     <br>
                 </span>
                 <span id="Tuesday">Tuesday 
                     <br>
                     <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
                     <br>
-                    <input type="button" id="Tuesday" onclick="addTimeValue(event)" value="+">
+                    <input type="button" id="but" onclick="addTimeValue(event)" value="add">
                     <br>
                 </span>
                 <span id="Wednesday">Wednesday 
                     <br>
                     <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
                     <br>
-                    <input type="button" id="Wednesday" onclick="addTimeValue(event)" value="+">
+                    <input type="button" id="but" onclick="addTimeValue(event)" value="add">
                     <br>
                 </span>
                 <span id="Thursday">Thursday 
                     <br>
                     <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
                     <br>
-                    <input type="button" id="Thursday" onclick="addTimeValue(event)" value="+">
+                    <input type="button" id="but" onclick="addTimeValue(event)" value="add">
                     <br>
                 </span>
                 <span id="Friday">Friday 
                     <br>
                     <input type="number" name="" value="" id="numb" max="23" min="0">:<input type="number" name="" value="" id="numb" max="23" min="0">
                     <br>
-                    <input type="button" id="Friday" onclick="addTimeValue(event)" value="+">
+                    <input type="button" id="but" onclick="addTimeValue(event)" value="add">
                     <br>
                 </span>
             </div><hr>
             <div id="courses">
-                write your courses:<br>
+                Write your courses:<br>
                 <textarea cols="15" rows="1" id="course"></textarea>
-                <button ng-click="addCourse()">+</button>
+                <button id="but" ng-click="addCourse()">+</button>
                 <ul>
                     <li ng-repeat="course in courses">
                         {{course}} 
