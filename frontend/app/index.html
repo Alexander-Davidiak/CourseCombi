@@ -2,6 +2,8 @@
 <html ng-app="CourseCombiApp">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
       <link rel="icon" href="img/Logo_1.png">
       <link rel="stylesheet" href="css/bootsrap.css">
       <link rel="stylesheet" href="css/index.css">
@@ -69,7 +71,7 @@
             </div><hr>
             <div id="courses">
                 Write your courses:<br>
-                <textarea cols="15" rows="1" id="course"></textarea>
+                <input type="text" class="form-control" placeholder="Input here....">
                 <button id="but" ng-click="addCourse()">+</button>
                 <ul>
                     <li ng-repeat="course in courses">
@@ -78,7 +80,7 @@
                     </li>
                 </ul>
             </div>
-            <input type="button" value="send">
+            <a href="#" class="button">Send <i class="icon-chevron-right"></i></a>
        </div>
    </body>
 </html>

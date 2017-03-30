@@ -1,9 +1,12 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+
 html, body{
     padding: 0px;
     margin: 0px;
     background-color: #546E7A;
     background-image: url(../img/BG.png);
     background-size: cover;
+    background-position: center center;
     
 }
 
@@ -58,8 +61,9 @@ html, body{
     padding: 3px;
     background-color: cornflowerblue;
     color: wheat;
-    width: 5%;
+    width: 10%;
     min-width: 30px;
+    
     
 }
 
@@ -76,10 +80,41 @@ html, body{
     color:white;
     text-shadow: 1px 1px 2px black;
 }
-#but{
+#but, #course{
     color: black;
+    background-color: white;
     text-shadow:none;
     font-size: 0.8em;
     
     
 }
+
+
+.form-control{
+    margin-left: 40%;
+    width: 20%;
+    
+}
+a.button{
+		background: #ECECEC;
+		border-radius: 15px;
+		padding: 10px 20px;
+		display: block;
+		font-family: arial;
+		font-weight: bold;
+		color:#7f7f7f;
+		text-decoration: none;
+		text-shadow:0px 1px 0px #fff;
+		border:1px solid #a7a7a7;
+		width: 145px;
+		margin:0px auto;
+		margin-top:100px;
+		box-shadow: 0px 2px 1px darkgrey, 0px -2px 8px black, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+	}
+
+	
+	a.button:hover{
+		box-shadow: 0px 2px 1px white inset, 0px -2px 20px darkgrey, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	}
+	
