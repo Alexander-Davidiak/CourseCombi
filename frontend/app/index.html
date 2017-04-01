@@ -73,12 +73,14 @@
                 Write your courses:<br>
                 <input type="text" class="form-control" placeholder="Input here....">
                 <button id="but" ng-click="addCourse()">+</button>
-                <ul>
-                    <li ng-repeat="course in courses">
-                        {{course}} 
-                        <a href="" ng-click="removeCourse($index)"><img src="img/cross.png"></a>
-                    </li>
-                </ul>
+                <div id="course_block">
+                    <ul>
+                        <li ng-repeat="course in courses">
+                            {{course}} 
+                            <a href="" ng-click="removeCourse($index)"><img src="img/cross.png"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <a href="#" class="button">Send <i class="icon-chevron-right"></i></a>
        </div>
